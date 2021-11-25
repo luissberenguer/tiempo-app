@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using create-snowpack-app"
+    />
+    <!--
+      Snowpack will replace %PUBLIC_URL% with the value you have for `baseUrl` in `snowpack.config.js`.
+      Make sure to update it with your GitHub Page URL. https://<your-username>.github.io/<your-repo-name>
+
+      More about config options:
+      - https://www.snowpack.dev/reference/configuration#buildoptions.baseurl
+    -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="%PUBLIC_URL%/_dist_/index.css"
+    />
+    <title>Snowpack & Tailwind App</title>
+  </head>
+  <body class="bg-gray-100	">
+    <!--
+      This HTML file is a template.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+
+      Start modyfing from here.
+    -->
+    <div class="py-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <p
+          class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase"
+        >
+          TuTiempo
+        </p>
+        <h3
+          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
+        >
+          Encuentra el tiempo
+        </h3>
+        <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 mx-auto">
+          Busca la ciudad para descubrir el tiempo...
+        </p>
+        <div class="p-2 items-center">
+          <div class="p-2 items-center">
+
+            <input class="rounded-md	px-10 py-2" type="text" name="ciudad" id="ciudad" placeholder="Buscar ciudad...">
+            <button class="rounded-md mx-5 px-10 py-2 w-100 bg-gray-500" id="boton" type="submit">Buscar</button>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 grid-ros-1 gap-8  w-full h-96 p-2 my-10">
+          <div id="container" class="modalColor grid grid-rows-3 rounded-3xl col-2 bg-gray-400">
+              <h1 class="text-3xl row-1 text-white	" id="titulo-ciudad">Ciudad</h1>
+              <h2 class="text-xl row-2 text-white	" id="descripcion">Descripción</h2>
+              <div class="text-5xl row-3 text-white	" id="temperatura">Temperatura</div>
+
+
+          </div>
+
+        </div>
+      
+      </div>
+    </div>
+
+    <!-- Add more scripts here -->
+    <script type="module" src="%PUBLIC_URL%/_dist_/index.js"></script>
+  </body>
+</html>
